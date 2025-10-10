@@ -42,11 +42,11 @@ nav{
     padding-bottom: 20px;
     margin-left: 10%;
 }
-.nav-right li:hover{
+.nav-right >ul>li>a:hover{
 color:#00C4CC;
 text-shadow: 5px 5px 30px #00C4CC;
 transition: color .5s ;
-cursor: pointer;
+
 transform: scale(1.05); 
 }
 .nav-right li {
@@ -161,14 +161,28 @@ color:#00BFFF;
     font-size: 28px;
      padding-right: 25px;
     }
-.about-icons> i:hover{
-
-  cursor: pointer;
-  transform: scale(1.05); 
-  
+.insta:hover>i{
+  background: linear-gradient( #405DE6, #833AB4, #E1306C, #F77737, #FCAF45);
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold;
 
 }
-
+.fb:hover>i{
+    background: linear-gradient(90deg, #1877F2, #0F5DC3);
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
+  font-weight: bold
+}
+.git:hover>i{
+  color: black;
+}
+.linked:hover>i{
+   background: linear-gradient(90deg, #0A66C2, #004182);
+     -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
+  font-weight: bold
+}
 #resume{
   border: solid#00BFFF;
   width: 150px;

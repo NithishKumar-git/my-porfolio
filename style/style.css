@@ -210,7 +210,13 @@ color: white;
 .skills-head{
   padding-top:5%;
 }
+.skills-head1{
+  padding-top:5%;
+}
 .skills-head> h1{
+  color: white;
+}
+.skills-head1> h1{
   color: white;
 }
 .skills-head> h3,h1 {
@@ -218,7 +224,16 @@ color: white;
   justify-content: center;
   align-items: center;
 }
+.skills-head1> h3,h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skills-head> h3{
+  color:#00BFFF;
+  margin-bottom: 15px;
+}
+.skills-head1> h3{
   color:#00BFFF;
   margin-bottom: 15px;
 }
@@ -543,7 +558,7 @@ footer{
   color: white;
 }
 
-@media (min-width: 600px) and (max-width: 1024px)  {
+@media (min-width: 400px) and (max-width: 780px)  {
   body{
     background: linear-gradient(to right, #3F51B5, #9C27B0);
     
@@ -610,6 +625,8 @@ footer{
 .edu-card{
  display: flex;
  flex-direction: row;
+ position: relative;
+ top: 100px;
  
 }
 
@@ -640,7 +657,7 @@ width: 200px;
   margin-left: 20px;
 }
 form>h3{
- display: inline-block;
+ display: inline;
 }
 
 .css>p{
@@ -659,14 +676,13 @@ footer{
   position: relative;
   top: 800px;
 }
-form h3{
-  display: inline-block;
+
+.skills-head>h1{
+  display: none;
 }
-.skills-head>h1,h2{
-  position: relative;
- 
-}
+.skills-head>h3{
+  display: none;
 }
 
-
+}
 

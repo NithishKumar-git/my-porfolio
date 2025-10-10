@@ -543,10 +543,14 @@ footer{
   color: white;
 }
 
-@media (max-width: 600px) {
-    nav{
+@media (min-width: 600px) and (max-width: 1024px)  {
+  body{
+    background: linear-gradient(to right, #3F51B5, #9C27B0);
+    
+  }
+  nav{
         display: inline;
-      
+
     }
     .nav-left{
      display: flex;
@@ -555,25 +559,114 @@ footer{
      margin: 0px;
      padding: 0px;
      margin-bottom: 20px;
-     background-color: black;
+     background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5) ;
+    opacity: 95%;
      margin-bottom: 0px;
     }
-      ul,li{
-      background-color: black;
+     .nav-right{
+      
       margin: 0px;
-     
+      background-color: rgba(0, 0, 0, 0.8); 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5) ;
+      opacity: 95%;
       
     }
-    .nav-right >ul>li{
-         margin-right: 10px;
+   
+   .about-right{
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    position: relative;
+   right: 500px;
+   }
+   
+    #skills{
+      background: none;
+    }
+     #edu{
+      background: none;
+    }
+       #contact{
+      background: none;
+    }
+   .nav-right >ul>li>a{
+         margin-right: 0px;
          margin-left: 10px;
+         
     }
 
     .about-right>img{
-    height: 150px;
-    width: 150px;
+    height:200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 3px 5px 30px #007bff;
-    display: none;
+  
+}
+.skills-1{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+.edu-card{
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+.edu-left{
+  margin-top: 110vh;
+  display:inline-block;
+  margin-left: 0px;
+
+}
+.edu-right{
+  margin-top: 110vh;
+  display:block;
+
+}
+
+input{
+width: 200px;
+}
+.resume{
+  width: 200px;
+  margin-left: -70px;
+}
+.sub{
+  position: relative;
+  top: 100vh;
+}
+.resume{
+  margin-left: 20px;
+}
+form>h3{
+ display: inline-block;
+}
+
+.css>p{
+  margin-left: 30px;
+}
+.py>p{
+  margin-left: 30px;
+}
+.css>img{
+  margin-left: 150px;
+}
+.py>img{
+  margin-left: 150px;
+}
+footer{
+  position: relative;
+  top: 800px;
+}
+form h3{
+  display: inline-block;
+}
+.skills-head>h1,h2{
+  position: relative;
+ 
 }
 }
+
+
+

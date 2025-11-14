@@ -32,9 +32,9 @@ nav{
   display: none;
 }
 .top-main{
-  position: relative;
-    right: 20px;     
-  bottom: 45px; 
+  position: absolute; 
+  right: 20px;
+  bottom: 20px;
   display: flex;
   flex-direction: row-reverse;
   justify-content:end;
@@ -103,7 +103,7 @@ transform: scale(1.05);
 /* About */
 
 #about{
-height: 95vh;
+height: 90vh;
 background: linear-gradient(to right, #3F51B5, #9C27B0);
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -619,12 +619,12 @@ footer{
       display: block;
       width: auto;
       height: 10vh;
+      
   }
   .ham{
   display: block;
   align-items: left;
   justify-content: left;
-  border: 1px solid;
   padding: 10px;
   border-radius: 10px;
   
@@ -670,7 +670,7 @@ footer{
     grid-template-columns: auto;
     text-align: center;
     justify-content: center;
-    padding: 40px 0;
+
   }
 
   .about-left {
@@ -681,12 +681,16 @@ footer{
 
   .about-left h2 {
     width: auto;
-    font-size: 1.2rem;
   }
 
   .about-icons {
     margin-top: 20px;
     width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
     .about-icons> a>i {
@@ -696,7 +700,9 @@ footer{
   .about-right img {
     height: 250px;
     width: 250px;
-    margin-top: 20px;
+
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -734,9 +740,6 @@ footer{
   }
 
   /* Contact */
-  #contact {
-    height: 100%;
-  }
 
   .sub {
     width: 90%;
@@ -746,7 +749,9 @@ footer{
   form {
     width: auto;
   }
-
+  form>h3{
+    width: auto;
+  }
   input {
     width: auto;
   }
@@ -781,4 +786,5 @@ footer{
   .skills-head h1 {
     font-size: 1.4rem;
   }
+
 }

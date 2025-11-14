@@ -44,7 +44,8 @@ function handleNav() {
     const currentDisplay = window.getComputedStyle(navbar).display;
 
     if (currentDisplay === "none") {
-        navbar.style.display = "block";  
+        navbar.style.display = "block"; 
+        navbar.style.transition = "0.2s" 
     } else {
         navbar.style.display = "none";
     }

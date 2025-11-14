@@ -48,4 +48,16 @@ function handleNav() {
     } else {
         navbar.style.display = "none";
     }
+  }
+function handleTop() {
+  const top = document.querySelector(".top");
+
+  if (window.scrollY > 200) {
+    top.style.display = "flex";
+  } else {
+    top.style.display = "none";
+  }
 }
+
+window.addEventListener("scroll", handleTop);
+

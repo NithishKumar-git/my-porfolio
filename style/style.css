@@ -24,15 +24,44 @@ nav{
   background-color: rgba(0, 0, 0, 0.8); 
   box-shadow: 0 2px 10px rgba(0,0,0,0.5) ;
   opacity: 95%;
- 
+
   
 }
 
 .ham{
   display: none;
 }
+.top-main{
+  position: relative;
+    right: 20px;     
+  bottom: 45px; 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:end;
+  align-items: end;
+}
 
 
+
+.top{
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.8); 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5) ;
+  opacity: 95%;
+  width: auto;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;  
+}
+.top > a{
+  color: white;
+  cursor: pointer;
+}
 .nav-right >ul>li>a{
     list-style-type: none;
     font-size: 20px;
@@ -670,7 +699,7 @@ footer{
     margin-top: 20px;
   }
 
-  
+
   /* Skills Section */
   #skills {
     height: auto;
@@ -678,7 +707,6 @@ footer{
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
     padding-top: 20px;
   }
 
@@ -686,20 +714,6 @@ footer{
     flex-direction: column;
     gap: 40px;
     margin-left: 0;
-  }
-
-  .html, .css, .py {
-    width: 85%;
-  }
-
-  .html img, .css img, .py img {
-    margin-left: 0;
-  }
-
-  .html p, .css p, .py p {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
   }
 
   /* Education */

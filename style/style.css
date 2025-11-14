@@ -612,7 +612,7 @@ footer{
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
 
   /* Navbar */
   nav {
@@ -690,7 +690,7 @@ footer{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+
   }
 
     .about-icons> a>i {
@@ -750,7 +750,8 @@ footer{
     width: auto;
   }
   form>h3{
-    width:100%;
+    width:70%;
+    display: block;
   }
   input {
     width: auto;
@@ -763,12 +764,15 @@ footer{
 }
 
 
-@media (max-width: 576px) {
+@media (min-width: 300px) {
 
   nav h1 {
     font-size: 20px;
   }
+  .nav-right> h3{
+  width: auto;
 
+}
   .nav-right a {
     font-size: 16px;
   }
@@ -786,5 +790,14 @@ footer{
   .skills-head h1 {
     font-size: 1.4rem;
   }
+  .top-main{
+  position: absolute; 
+  right: 0px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:end;
+  align-items: end;
+}
 
 }

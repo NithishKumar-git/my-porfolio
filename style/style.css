@@ -750,7 +750,7 @@ footer{
     width: auto;
   }
   form>h3{
-    width: auto;
+    width:100%;
   }
   input {
     width: auto;

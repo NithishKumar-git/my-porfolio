@@ -799,5 +799,21 @@ footer{
   justify-content:end;
   align-items: end;
 }
+  #skills {
+     width: auto;
+    height: auto;
+    padding-bottom: 50px;
+  }
 
+  .skills-grid {
+    width: auto;
+    padding-top: 20px;
+  }
+
+  .skills-1 {
+    width: auto;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 0;
+  }
 }

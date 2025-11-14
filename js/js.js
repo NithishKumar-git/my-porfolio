@@ -36,3 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('scroll', showOnScroll);
   showOnScroll();
 });
+
+
+
+function handleNav() {
+    const navbar = document.querySelector(".nav-right");
+    const currentDisplay = window.getComputedStyle(navbar).display;
+
+    if (currentDisplay === "none") {
+        navbar.style.display = "block";  
+    } else {
+        navbar.style.display = "none";
+    }
+}

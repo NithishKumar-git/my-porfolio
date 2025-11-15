@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll('.html, .css, .py'); // animate all skill boxes
+  const elements = document.querySelectorAll('.css,.react'); // animate all skill boxes
 
   function showOnScroll() {
     const triggerBottom = window.innerHeight * 0.85;

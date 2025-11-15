@@ -2,6 +2,8 @@
 *{
     margin: 0px;
     padding: 0px;
+   
+
 }
   html {
   scroll-behavior: smooth;
@@ -9,6 +11,9 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background: linear-gradient(-135deg, #6a11cb, #2575fc);
+
+ 
 }
 nav{
   display: flex;
@@ -104,7 +109,6 @@ transform: scale(1.05);
 
 #about{
 height: 90vh;
-background: linear-gradient(to right, #3F51B5, #9C27B0);
 display: grid;
 grid-template-columns: 1fr 1fr;
 
@@ -113,22 +117,21 @@ grid-template-columns: 1fr 1fr;
 }
 
 .about-left {
- 
   color: white;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 2fr 0fr ;
+  align-items:center ;
+  margin-left: 100px;
   
 }
 .about-left>h2{
     color: white;
     line-height: 2.2rem;
+    width: 600px;
 
 }
 .about-left span{
-color:#00BFFF;
+color:cyan;
 }
 
 .about-right {  
@@ -144,7 +147,8 @@ color:#00BFFF;
   width: 350px;
   border-radius: 50%;
   animation: float 3s ease-in-out infinite; 
- 
+ border: 5px solid white;  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -172,10 +176,7 @@ color:#00BFFF;
 
 
 .about-icons{
-  margin: 0px;
-  padding: 0px;
-  display: inline;
-  margin-top:-200px
+  margin-top:-300px
 
 
 
@@ -236,13 +237,10 @@ color:#00BFFF;
 }
 
 
-
-
 /* Skills */
 
 #skills{
 height: 90vh;
-background: linear-gradient(135deg, #3A41C6, #512888);
 color: white;
 }
 .skills-head{
@@ -280,52 +278,16 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 100px;
+gap: 50px;
 margin-left: 50px;
 
 
 
 }
-.html {
-  border: 1px solid transparent;
-  border-radius: 20px;
-  padding: 20px;
-   background: linear-gradient(135deg, #292d7c, #512888); 
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
-  color: #ECEFF1; 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(6px);
 
-}
-.html:hover {
- 
-  cursor: pointer;
-}
 
-.html > img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 150px;
-  overflow: hidden;
-}
 
-.html > p {
-  width: 350px;
-  margin-left: 40px;
-  line-height: 1.5rem;
-  overflow: hidden;
-}
-
-.html > h1 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-   overflow: hidden;
-}
-
-.html, .css, .py {
+.css, .react  {
   opacity: 0;
   transform: translateY(80px);
   transition: all 0.8s ease-out;
@@ -333,7 +295,7 @@ margin-left: 50px;
 }
 
 
-.html.show, .css.show, .py.show {
+.css.show, .react.show {
   opacity: 1;
   transform: translateY(0);
 
@@ -349,6 +311,7 @@ margin-left: 50px;
   backdrop-filter: blur(6px);
   border-radius: 20px;
   padding: 20px;
+    height: 250px;
 }
 
 .css>img{
@@ -362,9 +325,9 @@ margin-left: 50px;
    line-height: 1.5rem;
  
 }
-.py{
-  border: 1px solid transparent;
-  background: linear-gradient(135deg, #512888, #292d7c); 
+.react{
+   border: 1px solid transparent;
+  background: linear-gradient( #512888, #292d7c, #512888); 
   border-radius: 16px;
   padding: 1.5rem 2rem;
   color: #ECEFF1; 
@@ -372,22 +335,27 @@ margin-left: 50px;
   backdrop-filter: blur(6px);
   border-radius: 20px;
   padding: 20px;
-  
+   width: auto;
+   height: 250px;
 }
-.py>img{
-  width: 100px;
-  height: 100px;
+
+.react>img{
+  width: auto;
+  height:85px;
   border-radius: 50%;
-  margin-left: 120px;
- 
+  margin-left: 120px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
 }
-.py>p{
+.react>p{
   width: 350px;
-  line-height: 1.5rem;
+   line-height: 1.5rem;
+ 
 }
 #edu{
 height: 100vh;
-background: linear-gradient(to right, #3F51B5, #9C27B0);
 
 }
 .edu-card{
@@ -503,7 +471,6 @@ height: 90vh;
 display: flex;
 align-items: center;
 justify-content: center;
- background: linear-gradient(135deg, #3A41C6, #512888);
 }
 
 form{
@@ -525,7 +492,8 @@ border-radius: 5%;
  
  
 input {
-  width: 300%;
+
+  width: 650px;;
   padding: 12px 16px;
   margin: 10px 0;
   font-size: 1rem;
@@ -727,18 +695,18 @@ footer{
   }
 
   form {
-    width: auto;
+    width: 100%;
   }
   form>h3{
     width:70%;
     display: block;
   }
   input {
-    width: auto;
+    width: 75%;
   }
 
   .resume {
-    width: 100%;
+    width: 75%;
     margin-left: 0;
   }
     .about-left h2 {

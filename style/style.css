@@ -81,8 +81,8 @@ nav{
     margin-left: 10%;
 }
 .nav-right >ul>li>a:hover{
-color: #953df4;
-text-shadow: 5px 5px 30px  #953df4;
+ color: #0ea5e9;
+text-shadow: 5px 5px 30px  #0ea5e9;
 transition: color .5s ;
 
 transform: scale(1.05); 
@@ -94,7 +94,7 @@ transform: scale(1.05);
   vertical-align: middle;
  }
 .nav-left>h1>span{
-    color:  #953df4;
+    color: #0ea5e9;
 }
 .nav-left>h1{
   font-size: 25px;
@@ -165,8 +165,8 @@ font-size: 35px;
   transform: scale(1.05);
   transition: 0.5s;
   cursor: pointer;
-  box-shadow: 1px 5px 15px  #953df4;
-  border: 10px solid   #953df4;
+  box-shadow: 1px 2px 35px #0ea5e9;
+  border: px solid   #0ea5e9;
 
 }
 
@@ -379,7 +379,7 @@ animation: float 3s ease-in-out infinite;
   width: 450px;
   margin-left: 25%;
   margin-top: 45px;
-  background-color: #e3e0f9;;
+background-color: #dbe4ea;
   border-radius: 16px;
   padding: 1.5rem 2rem;
   color: #ECEFF1; 
@@ -434,7 +434,7 @@ animation: float 3s ease-in-out infinite;
   width: 450px;
   margin-left: 5%;
   margin-top: 35px;
- background-color: #e3e0f9;
+background-color: #dbe4ea;
   border-radius: 16px;
   padding: 1.5rem 2rem;
   color: #ECEFF1; 
@@ -477,7 +477,7 @@ form>h1{
 width: 45%;
 padding: 50px;
 box-shadow: 1px 1px 20px;
-background-color: #e3e0f9;
+background-color: #dbe4ea;
 color: black;
 border-radius: 5%;
 
@@ -602,7 +602,7 @@ footer{
   }
 
   .nav-right >ul>li>a{
-    color:  #1a1a3c;
+    color:  white;
   }
   /* About Section */
   #about {
@@ -618,7 +618,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: none;
+    margin: auto;
+    margin-top: 30px;
   }
 
   .about-left  span{
@@ -705,7 +706,15 @@ footer{
     line-height: 1.7rem;
   }
 
+.about-right > img {
+  height: 250px;
+  width: 250px;
 }
+}
+
+
+
+
 
 
 @media (min-width: 250px) {
